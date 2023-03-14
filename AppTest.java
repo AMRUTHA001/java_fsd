@@ -1,3 +1,5 @@
+Test to findout the app
+
 package ustbatchno3.junit5testcases;
 
 import junit.framework.Test;
