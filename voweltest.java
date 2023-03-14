@@ -1,3 +1,5 @@
+Testing the presence of vowels in a given string.
+
 package ustbatchno3.junit5testcases;
 
 import static org.junit.Assert.assertEquals;
