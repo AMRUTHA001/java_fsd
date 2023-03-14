@@ -1,4 +1,4 @@
-
+Main class to find sum of two numbers
 public class sumadd {
 	
 		public static void main(String[] args) {
