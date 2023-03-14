@@ -1,3 +1,4 @@
+find the state and district of a registered vehicle.check whether it is in correct format.
 
 import org.junit.Test;
 import static org.junit.Assert.*;
