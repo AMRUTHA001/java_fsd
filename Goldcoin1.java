@@ -1,3 +1,6 @@
+ find employee who joined in organization within 80 days starting jan1 he received 5 gold coins.the employee who joined in the period of 172 days get 3 gold coins.employee joined after 266 days got 1 gold coin.after join they didnt get any gold coin.
+
+	 
 package ustbatchno3.junit5testcases;
 import java.util.stream.IntStream;
 
