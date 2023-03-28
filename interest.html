@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INTEREST</title>
+        <style>
+           footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+           }
+          </style>
+        </head>
+<body>
+
+<h1>Bank Interest Calculator</h1>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="aadhar">Aadhar:</label>
+      <input type="text" id="aadhar" name="aadhar" required><br>
+
+      <label for="pan">Pan:</label>
+      <input type="text" id="pan" name="pan" required><br>
+
+      <label for="branch">Branch:</label>
+      <input type="text" id="branch" name="branch" required><br>
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" min="1" required><br>
+
+      <label for="years">Years:</label>
+      <input type="number" id="years" name="years" min="1" required><br>
+
+      <label for="rate">Rate:</label>
+      <select id="rate" name="rate">
+        <option value="2">2%</option>
+        <option value="3">3%</option>
+        <option value="4">4%</option>
+        <option value="5">5%</option>
+      </select><br>
+
+      <input type="button" value="Calculate Interest" onclick="calculateInterest()">
+    </form>
+
+    <p id="interest"></p>
+
+    <script>
+      function calculateInterest() {
+        // Get the input values
+        const amount = parseFloat(document.getElementById("amount").value);
+        const years = parseFloat(document.getElementById("years").value);
+        const rate = parseFloat(document.getElementById("rate").value);
+
+        // Calculate the interest
+        const interest = (amount * years * rate) / 100;
+
+        // Display the interest
+        document.getElementById("interest").innerHTML = "Interest: " + interest.toFixed(2);
+      }
+    </script>
+    <footer>
+    <p>At UST Bank, we are committed to provide best internet banking services to our customers.<br> Please feel free to share your Internet Banking experience with us over phone.<br>
+
+      UST Bank now provides your Account Balance and Transaction details over phone round the clock. Information on deposits & loan schemes and services also available.<br>
+      
+      <b>1800 1234 & 1800 2100</b> (Toll free and accessible from all landlines and mobile phones of India)<br>
+      
+      <b>0091 80 26599990</b> (Accessible from all landlines and mobile phones of India and abroad)</p>
+    </footer>
+</body>
+</html>
+
